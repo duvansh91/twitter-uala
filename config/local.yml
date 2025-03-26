@@ -1,0 +1,14 @@
+mongodb_config:
+  uri: "MONGODB_URI"
+  database_name: "MONGO_DATABASE"
+  timeout_seconds: 5
+cache_config:
+  duration_hours: 24
+max_tweet_length: 280
+latests_tweets_limit: 50
+collections:
+  users_collection: "users"
+  tweets_collection: "tweets"
+  follows_collection: "follows"
+  timelines_collection: "timelines"
+server_port: "8080"

@@ -28,5 +28,19 @@ func (r *repository) Find(
 	if err != nil {
 		return nil, err
 	}
+
 	return cusor, nil
+}
+
+func (r *repository) FindOne(
+	ctx context.Context,
+	filter interface{},
+	opts ...*options.FindOneOptions,
+) (cur *mongo.SingleResult, err error) {
+	result := r.collection.FindOne(ctx, filter, opts...)
+	if result.Err() != nil {
+		return nil, result.Err()
+	}
+
+	return result, nil
 }

@@ -17,11 +17,8 @@ type repository struct {
 	durationTime time.Duration
 }
 
-// Repository groups methods to interact with an in memory cache.
 type Repository interface {
-	// Get gets an item from cache by key.
 	Get(key string) *ccache.Item
-	// Set inserts a new item in cache or overwrite it if already exists.
 	Set(key string, item []byte)
 }
 
