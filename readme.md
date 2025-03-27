@@ -7,7 +7,7 @@ Para levantar el proyecto en local se requiere tener instalado `docker` y `docke
 # Como usarlo
 
 * Seguir a un usuario:
-  * Path: `/twitter-uala/user/{user_id}/follow`
+  * Path: `http://localhost:8080/twitter-uala/user/{user_id}/follow`
   * Método HTTP: `POST`
   * Body:  
   
@@ -28,7 +28,7 @@ Para levantar el proyecto en local se requiere tener instalado `docker` y `docke
 ---
 
 * Publicar un Tweet:
-  * Path: `/twitter-uala/user/{user_id}/publish`
+  * Path: `http://localhost:8080/twitter-uala/user/{user_id}/publish`
   * Método HTTP: `POST`
   * Body:  
   
@@ -47,7 +47,7 @@ Para levantar el proyecto en local se requiere tener instalado `docker` y `docke
 ---
 
 * Ver Timeline:
-  * Path: `/twitter-uala/user/{user_id}/timeline`
+  * Path: `http://localhost:8080/twitter-uala/user/{user_id}/timeline`
   * Método HTTP: `GET`
     
     Posibles códigos de respuesta:
